@@ -26,11 +26,20 @@ month={April},}
 ```bash
 mkdir build
 cd build 
-cmake ..
-make -j4
+cmake -DCMAKE_PREFIX_PATH=/home/dueding/micromamba/envs/adet_3_12 -DCMAKE_INCLUDE_PATH=/home/dueding/micromamba/envs/adet_3_12/include -DCMAKE_LIBRARY_PATH=/home/dueding/micromamba/envs/adet_3_12/lib ..
+make # -j4 for parralel build jobs
 ```
 
 ## Run:
 ```
 ./triangulation
+```
+
+## Import and Use in Python 
+```
+import triangulation_module as tri # make sure module is in path otherwhise use sys.path and append the directory
+
+triangulation = tri.TriangulationIRMP() # construct Triangulation object 
+cam1
+triangulation.init(list([]))
 ```

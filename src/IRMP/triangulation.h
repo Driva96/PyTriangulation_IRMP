@@ -1,6 +1,6 @@
 #pragma once
 #include <Eigen/Core>
-#include "camera.h"
+#include "IRMP/camera.h"
 #include "ceres/ceres.h"
 #include <memory>
 namespace tri

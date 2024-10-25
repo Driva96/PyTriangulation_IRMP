@@ -1,4 +1,4 @@
-#include "camera.h"
+#include "IRMP/camera.h"
 namespace tri
 {
 Camera::Camera(const Eigen::Matrix3d& att,

@@ -1,4 +1,4 @@
-#include "triangulation.h"
+#include "IRMP/triangulation.h"
 #include <Eigen/Cholesky>
 #include <Eigen/Eigenvalues>
 #include <Eigen/Jacobi>
